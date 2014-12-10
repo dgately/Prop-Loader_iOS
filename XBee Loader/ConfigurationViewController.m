@@ -244,7 +244,7 @@ static NSArray *xBeeDevices;	// The currently known XBee devices.
     devicePicker.showsSelectionIndicator = YES;
     [self.view addSubview: devicePicker];
     
-	// Add a glass view, used for animating the progress view.
+    // Add a glass view, used for animating the progress view.
     self.glassView = [[UIView alloc] initWithFrame: self.view.frame];
     [self.view addSubview: glassView];
     [glassView setHidden: YES];
@@ -285,7 +285,7 @@ static NSArray *xBeeDevices;	// The currently known XBee devices.
  */
 
 - (void) loaderDevices: (NSArray *) devices {
-	// Remember the devices.
+    // Remember the devices.
     xBeeDevices = devices;
     
     // Reload the picker's contents.
@@ -385,9 +385,9 @@ static NSArray *xBeeDevices;	// The currently known XBee devices.
  * call in selectCurrentDevice.
  *
  * @param pickerView		An object representing the picker view requesting the data.
- * @param row				A zero-indexed number identifying a row of component. Rows are numbered 
+ * @param row				A zero-indexed number identifying a row of component. Rows are numbered
  *							top-to-bottom.
- * @param component			A zero-indexed number identifying a component of pickerView. Components 
+ * @param component			A zero-indexed number identifying a component of pickerView. Components
  *							are numbered left-to-right.
  */
 

@@ -228,7 +228,7 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *path = [paths objectAtIndex: 0];
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath: path error: NULL];
-	for (NSString *fileName in files) {
+    for (NSString *fileName in files) {
         if ([[fileName pathExtension] isEqualToString: @"binary"])
             [binaries addObject: [path stringByAppendingPathComponent: fileName]];
     }
