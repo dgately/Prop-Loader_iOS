@@ -61,7 +61,7 @@
     
     Loader *loader = [Loader defaultLoader];
     loader.delegate = self;
-
+    
     NSError *error = nil;
     [loader load: fileName
            eprom: epromSwitch.isOn
@@ -197,10 +197,27 @@
     // iOS 6.1 that causes the picker to be resized when the view is rerdawn, particularly when the
     // Load the Image button is pressed, the keyboard is shown/hidden, or the view appears after showing
     // the network test view.
-    if (IS_4_INCH_IPHONE)
-        binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 237, 320, 216)];
-    else
-        binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 232, 320, 162)];
+    
+    // Calculate the screen's width.
+    float screenWidth = [UIScreen mainScreen].bounds.size.width;
+    float pickerWidth = screenWidth * 3 / 4;
+    
+    // Calculate the starting x coordinate.
+    float xPoint = screenWidth / 2 - pickerWidth / 2;
+    
+    // Set the picker frame based on the screen width of the device
+    if([UIDevice currentDevice].userInterfaceIdiom==UIUserInterfaceIdiomPad) {
+        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+            binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 237.0f, pickerWidth, 216.0f)];
+        else
+            binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 232.0f, 320.0f, 162.0f)];
+    } else {
+        if (IS_4_INCH_IPHONE)
+            binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 237.0f, pickerWidth, 216.0f)];
+        else
+            binaryPicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 232, 320, 162)];
+    }
+    
     binaryPicker.delegate = self;
     binaryPicker.dataSource = self;
     binaryPicker.showsSelectionIndicator = YES;
@@ -209,7 +226,7 @@
     // Get the list of available binaries.
     binaries = [[NSMutableArray alloc] init];
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-	NSString *path = [paths objectAtIndex: 0];
+    NSString *path = [paths objectAtIndex: 0];
     NSArray *files = [[NSFileManager defaultManager] contentsOfDirectoryAtPath: path error: NULL];
 	for (NSString *fileName in files) {
         if ([[fileName pathExtension] isEqualToString: @"binary"])

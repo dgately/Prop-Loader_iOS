@@ -1015,7 +1015,7 @@ typedef struct {
                     [delegate loadFailure];
             }
         }
-        if (err) printf("Error %d, %s:%s\n", err.code, [err.localizedDescription UTF8String], [err.localizedFailureReason UTF8String]); // TODO: REmove
+        if (err) printf("Error %ld, %s:%s\n", (long)err.code, [err.localizedDescription UTF8String], [err.localizedFailureReason UTF8String]); // TODO: REmove
     } while (!acknowledged && !cancelling);
     
     // Report any errors.

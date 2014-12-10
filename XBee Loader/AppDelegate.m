@@ -11,11 +11,16 @@
 @implementation AppDelegate
 
 - (BOOL) application: (UIApplication *) application didFinishLaunchingWithOptions: (NSDictionary *) launchOptions {
-    // Copy any preloaded binaries into the sandbox.
-    NSArray *files = [[NSArray alloc] initWithObjects: @"LargeSpinCode", @"ClockDemo", @"Float-Blink_Demo", nil];
-    for (NSString *fileName in files) {
-        NSString *samplePath = [[NSBundle mainBundle] pathForResource: fileName ofType: @"binary"];
-        NSData *fileContents = [[NSData alloc] initWithContentsOfFile: samplePath];
+    
+    // Copy content of all files with .binary extensions into the sandbox
+    NSArray *files = [[NSBundle mainBundle] pathsForResourcesOfType: @"binary" inDirectory: Nil];
+    
+    for (NSString *filePath in files) {
+        
+        // Pull the actual filename from its path
+        NSString *fileName = [filePath lastPathComponent];
+        fileName    = [fileName stringByDeletingPathExtension];
+        NSData *fileContents = [[NSData alloc] initWithContentsOfFile: filePath];
         
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
         NSString *path = [paths objectAtIndex: 0];

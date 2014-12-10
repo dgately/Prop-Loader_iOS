@@ -211,16 +211,34 @@ static NSArray *xBeeDevices;	// The currently known XBee devices.
     // iOS 6.1 that causes the picker to be resized when the view is rerdawn, particularly when the
     // Load the Image button is pressed, the keyboard is shown/hidden, or the view appears after showing
     // the network test view.
-    if (IS_4_INCH_IPHONE)
+    
+    // Calculate the screen's width.
+    float screenWidth = [UIScreen mainScreen].bounds.size.width;
+    float pickerWidth = screenWidth * 3 / 4;
+    
+    // Calculate the starting x coordinate.
+    float xPoint = screenWidth / 2 - pickerWidth / 2;
+    
+    // Set the picker frame based on the screen width of the device
+    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad) {
         if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-        	devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 352, 320, 216)];
+            devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 352.0f, pickerWidth, 216.0f)];
         else
-        	devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 288, 320, 216)];
-    else
-        if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
-	        devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 318, 320, 162)];
-        else
-            devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 254, 320, 162)];
+            devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 288.0f, 320.0f, 216.0f)];
+    } else {
+        
+        if (IS_4_INCH_IPHONE)
+            if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+                devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 352, pickerWidth, 216)];
+            else
+                devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 288, 320, 216)];
+            else
+                if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"7.0"))
+                    devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(xPoint, 318, pickerWidth, 162)];
+                else
+                    devicePicker = [[UIPickerView alloc] initWithFrame: CGRectMake(0, 254, 320, 162)];
+    }
+    
     devicePicker.delegate = self;
     devicePicker.dataSource = self;
     devicePicker.showsSelectionIndicator = YES;

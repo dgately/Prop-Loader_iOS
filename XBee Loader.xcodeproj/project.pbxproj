@@ -16,7 +16,6 @@
 		27420E7F18A9504E00DD3175 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27420E7D18A9504E00DD3175 /* InfoPlist.strings */; };
 		27420E8118A9504E00DD3175 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27420E8018A9504E00DD3175 /* main.m */; };
 		27420E8518A9504E00DD3175 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27420E8418A9504E00DD3175 /* AppDelegate.m */; };
-		27420E8818A9504E00DD3175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27420E8618A9504E00DD3175 /* Main.storyboard */; };
 		27420E8B18A9504E00DD3175 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27420E8A18A9504E00DD3175 /* MainViewController.m */; };
 		27420E8D18A9504E00DD3175 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27420E8C18A9504E00DD3175 /* Images.xcassets */; };
 		27420E9418A9504E00DD3175 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27420E9318A9504E00DD3175 /* XCTest.framework */; };
@@ -27,14 +26,23 @@
 		27420EAC18A9510B00DD3175 /* eyecandy.png in Resources */ = {isa = PBXBuildFile; fileRef = 27420EAA18A9510B00DD3175 /* eyecandy.png */; };
 		27420EAD18A9510B00DD3175 /* eyecandy@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 27420EAB18A9510B00DD3175 /* eyecandy@2x.png */; };
 		27582CE5197D96F600D77AB8 /* TXBee.m in Sources */ = {isa = PBXBuildFile; fileRef = 27582CE4197D96F600D77AB8 /* TXBee.m */; };
-		277C34DB18B573A1002FC0D3 /* LargeSpinCode.binary in Resources */ = {isa = PBXBuildFile; fileRef = 277C34D818B56E2B002FC0D3 /* LargeSpinCode.binary */; };
-		277C34DC18B573A1002FC0D3 /* ClockDemo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 277C34D918B56E2B002FC0D3 /* ClockDemo.binary */; };
-		277C34DD18B573A2002FC0D3 /* Float-Blink_Demo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 277C34DA18B56E2B002FC0D3 /* Float-Blink_Demo.binary */; };
 		27813ABA18D398A000705BA0 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 27813AB918D398A000705BA0 /* Settings.bundle */; };
 		279C734C18AED507003F83F8 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 279C734B18AED507003F83F8 /* GCDAsyncUdpSocket.m */; };
 		27BAF04619759533009A53BA /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BAF04519759533009A53BA /* Loader.m */; };
 		27C6AC401980266100936F13 /* UDPDataBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 27C6AC3F1980266100936F13 /* UDPDataBuffer.m */; };
 		27D5CEC618D0FEEB00C961F6 /* NetworkTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D5CEC518D0FEEB00C961F6 /* NetworkTestViewController.m */; };
+		868AD26F1A381EBC00133780 /* LEDsOnOff.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26A1A381EBC00133780 /* LEDsOnOff.binary */; };
+		868AD2701A381EBC00133780 /* LEDsOnOff.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26A1A381EBC00133780 /* LEDsOnOff.binary */; };
+		868AD2711A381EBC00133780 /* LEDCylon.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26B1A381EBC00133780 /* LEDCylon.binary */; };
+		868AD2721A381EBC00133780 /* LEDCylon.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26B1A381EBC00133780 /* LEDCylon.binary */; };
+		868AD2731A381EBC00133780 /* FloatBlinkDemo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26C1A381EBC00133780 /* FloatBlinkDemo.binary */; };
+		868AD2741A381EBC00133780 /* FloatBlinkDemo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26C1A381EBC00133780 /* FloatBlinkDemo.binary */; };
+		868AD2751A381EBC00133780 /* LargeSpinCode.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26D1A381EBC00133780 /* LargeSpinCode.binary */; };
+		868AD2761A381EBC00133780 /* LargeSpinCode.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26D1A381EBC00133780 /* LargeSpinCode.binary */; };
+		868AD2771A381EBC00133780 /* ClockDemo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26E1A381EBC00133780 /* ClockDemo.binary */; };
+		868AD2781A381EBC00133780 /* ClockDemo.binary in Resources */ = {isa = PBXBuildFile; fileRef = 868AD26E1A381EBC00133780 /* ClockDemo.binary */; };
+		86FE6A691A38243E00BC7AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FE6A681A38243E00BC7AB8 /* Main.storyboard */; };
+		86FE6A6A1A38243E00BC7AB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86FE6A681A38243E00BC7AB8 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +72,6 @@
 		27420E8218A9504E00DD3175 /* XBee Loader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XBee Loader-Prefix.pch"; sourceTree = "<group>"; };
 		27420E8318A9504E00DD3175 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27420E8418A9504E00DD3175 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		27420E8718A9504E00DD3175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27420E8918A9504E00DD3175 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		27420E8A18A9504E00DD3175 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		27420E8C18A9504E00DD3175 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -77,9 +84,6 @@
 		27420EAB18A9510B00DD3175 /* eyecandy@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "eyecandy@2x.png"; path = "Art/eyecandy@2x.png"; sourceTree = SOURCE_ROOT; };
 		27582CE3197D96F600D77AB8 /* TXBee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXBee.h; sourceTree = "<group>"; };
 		27582CE4197D96F600D77AB8 /* TXBee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXBee.m; sourceTree = "<group>"; };
-		277C34D818B56E2B002FC0D3 /* LargeSpinCode.binary */ = {isa = PBXFileReference; lastKnownFileType = file; name = LargeSpinCode.binary; path = "../../XBee WiFi/Download-Demos/LargeSpinCode.binary"; sourceTree = "<group>"; };
-		277C34D918B56E2B002FC0D3 /* ClockDemo.binary */ = {isa = PBXFileReference; lastKnownFileType = file; name = ClockDemo.binary; path = "../../XBee WiFi/Download-Demos/ClockDemo.binary"; sourceTree = "<group>"; };
-		277C34DA18B56E2B002FC0D3 /* Float-Blink_Demo.binary */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Float-Blink_Demo.binary"; path = "../../XBee WiFi/Download-Demos/Float-Blink_Demo.binary"; sourceTree = "<group>"; };
 		27813AB918D398A000705BA0 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		279C734A18AED507003F83F8 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = UDP/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
 		279C734B18AED507003F83F8 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = UDP/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
@@ -89,6 +93,12 @@
 		27C6AC3F1980266100936F13 /* UDPDataBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UDPDataBuffer.m; sourceTree = "<group>"; };
 		27D5CEC418D0FEEB00C961F6 /* NetworkTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkTestViewController.h; sourceTree = "<group>"; };
 		27D5CEC518D0FEEB00C961F6 /* NetworkTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkTestViewController.m; sourceTree = "<group>"; };
+		868AD26A1A381EBC00133780 /* LEDsOnOff.binary */ = {isa = PBXFileReference; lastKnownFileType = file; path = LEDsOnOff.binary; sourceTree = "<group>"; };
+		868AD26B1A381EBC00133780 /* LEDCylon.binary */ = {isa = PBXFileReference; lastKnownFileType = file; path = LEDCylon.binary; sourceTree = "<group>"; };
+		868AD26C1A381EBC00133780 /* FloatBlinkDemo.binary */ = {isa = PBXFileReference; lastKnownFileType = file; path = FloatBlinkDemo.binary; sourceTree = "<group>"; };
+		868AD26D1A381EBC00133780 /* LargeSpinCode.binary */ = {isa = PBXFileReference; lastKnownFileType = file; path = LargeSpinCode.binary; sourceTree = "<group>"; };
+		868AD26E1A381EBC00133780 /* ClockDemo.binary */ = {isa = PBXFileReference; lastKnownFileType = file; path = ClockDemo.binary; sourceTree = "<group>"; };
+		86FE6A681A38243E00BC7AB8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +167,8 @@
 				270C388B19008CC6005033D4 /* Common.h */,
 				270C388C19008CC6005033D4 /* Common.m */,
 				27BAF04419759533009A53BA /* Loader.h */,
+				86FE6A681A38243E00BC7AB8 /* Main.storyboard */,
 				27BAF04519759533009A53BA /* Loader.m */,
-				27420E8618A9504E00DD3175 /* Main.storyboard */,
 				27420E8918A9504E00DD3175 /* MainViewController.h */,
 				27420E8A18A9504E00DD3175 /* MainViewController.m */,
 				27D5CEC418D0FEEB00C961F6 /* NetworkTestViewController.h */,
@@ -218,9 +228,11 @@
 		277C34D718B56DE1002FC0D3 /* Binaries */ = {
 			isa = PBXGroup;
 			children = (
-				277C34D818B56E2B002FC0D3 /* LargeSpinCode.binary */,
-				277C34D918B56E2B002FC0D3 /* ClockDemo.binary */,
-				277C34DA18B56E2B002FC0D3 /* Float-Blink_Demo.binary */,
+				868AD26A1A381EBC00133780 /* LEDsOnOff.binary */,
+				868AD26B1A381EBC00133780 /* LEDCylon.binary */,
+				868AD26C1A381EBC00133780 /* FloatBlinkDemo.binary */,
+				868AD26D1A381EBC00133780 /* LargeSpinCode.binary */,
+				868AD26E1A381EBC00133780 /* ClockDemo.binary */,
 			);
 			name = Binaries;
 			sourceTree = "<group>";
@@ -311,15 +323,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				277C34DB18B573A1002FC0D3 /* LargeSpinCode.binary in Resources */,
-				277C34DC18B573A1002FC0D3 /* ClockDemo.binary in Resources */,
-				277C34DD18B573A2002FC0D3 /* Float-Blink_Demo.binary in Resources */,
 				27420E8D18A9504E00DD3175 /* Images.xcassets in Resources */,
+				868AD2751A381EBC00133780 /* LargeSpinCode.binary in Resources */,
 				27420EAD18A9510B00DD3175 /* eyecandy@2x.png in Resources */,
+				868AD2731A381EBC00133780 /* FloatBlinkDemo.binary in Resources */,
+				868AD26F1A381EBC00133780 /* LEDsOnOff.binary in Resources */,
+				86FE6A691A38243E00BC7AB8 /* Main.storyboard in Resources */,
+				868AD2771A381EBC00133780 /* ClockDemo.binary in Resources */,
 				27420EAC18A9510B00DD3175 /* eyecandy.png in Resources */,
+				868AD2711A381EBC00133780 /* LEDCylon.binary in Resources */,
 				27420E7F18A9504E00DD3175 /* InfoPlist.strings in Resources */,
 				27813ABA18D398A000705BA0 /* Settings.bundle in Resources */,
-				27420E8818A9504E00DD3175 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +341,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86FE6A6A1A38243E00BC7AB8 /* Main.storyboard in Resources */,
 				27420E9E18A9504E00DD3175 /* InfoPlist.strings in Resources */,
+				868AD2761A381EBC00133780 /* LargeSpinCode.binary in Resources */,
+				868AD2781A381EBC00133780 /* ClockDemo.binary in Resources */,
+				868AD2721A381EBC00133780 /* LEDCylon.binary in Resources */,
+				868AD2701A381EBC00133780 /* LEDsOnOff.binary in Resources */,
+				868AD2741A381EBC00133780 /* FloatBlinkDemo.binary in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,14 +413,6 @@
 				27420E7E18A9504E00DD3175 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		27420E8618A9504E00DD3175 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				27420E8718A9504E00DD3175 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		27420E9C18A9504E00DD3175 /* InfoPlist.strings */ = {
@@ -495,6 +507,7 @@
 				INFOPLIST_FILE = "XBee Loader/XBee Loader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -510,6 +523,7 @@
 				INFOPLIST_FILE = "XBee Loader/XBee Loader-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
